@@ -5,6 +5,11 @@ go 1.23.2
 require cloud.google.com/go/storage v1.46.0
 
 require (
+	github.com/auth0/go-jwt-middleware v1.0.1 // indirect
+	github.com/form3tech-oss/jwt-go v3.2.5+incompatible // indirect
+)
+
+require (
 	cel.dev/expr v0.16.1 // indirect
 	cloud.google.com/go v0.116.0 // indirect
 	cloud.google.com/go/auth v0.10.0 // indirect
