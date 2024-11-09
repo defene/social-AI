@@ -32,12 +32,12 @@ func InitGCSBackend() {
 
 func (backend *GoogleCloudStorageBackend) SaveToGCS(r io.Reader, objectName string) (string, error) {
 	ctx := context.Background()
-
 	object := backend.client.Bucket(backend.bucket).Object(objectName)
 	wc := object.NewWriter(ctx)
 	if _, err := io.Copy(wc, r); err != nil {
 		return "", err
 	}
+
 	if err := wc.Close(); err != nil {
 		return "", err
 	}
