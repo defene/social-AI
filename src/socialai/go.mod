@@ -7,6 +7,8 @@ require cloud.google.com/go/storage v1.46.0
 require (
 	github.com/auth0/go-jwt-middleware v1.0.1 // indirect
 	github.com/form3tech-oss/jwt-go v3.2.5+incompatible // indirect
+	github.com/gorilla/handlers v1.5.2 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
 require (
